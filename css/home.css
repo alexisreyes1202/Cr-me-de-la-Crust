@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Clean, approachable font */
+    line-height: 1.6;
+    padding-top: 80px;
+    background-color: #fef8ec; /* Warm cream background for a cozy feel */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(202, 140, 101, 0.9); /* Soft caramel tone */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.logo img {
+    height: 70px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fef8ec; /* Warm cream text */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px; /* Rounded buttons for softness */
+    transition: background 0.3s ease, transform 0.3s;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    background: #f8c291; /* Warm peach for hover effect */
+    color: #623412; 
+    transform: scale(1.1);
+}
+
+.front-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background-image: url('title-background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #623412; /* Rich chocolate brown */
+    font-size: 48px;
+    font-family: 'Playfair Display', serif; /* Elegant font for a refined touch */
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.title-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.title-text h1 {
+    font-size: 68px;
+    margin: 0;
+}
+
+.title-text p {
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #8d6246; /* Subtle brown for readability */
+}
+
+.title-image img {
+    max-width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff5e6; /* Light pastel background for contrast */
+}
+
+#menu h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #623412;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.menu-item {
+    text-align: center;
+    margin: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item img {
+    width: 280px;
+    height: 280px;
+    border-radius: 15px; /* Softer corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Gentle shadow for depth */
+}
+
+.menu-item:hover {
+    border: 2px solid #f8c291;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+footer {
+    background: #8d6246; /* Darker caramel tone */
+    color: #fef8ec;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
